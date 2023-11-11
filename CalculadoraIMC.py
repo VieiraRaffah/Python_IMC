@@ -9,7 +9,7 @@ def calcular_imc():
         resultado_texto = f"{nome}, seu IMC é: {imc:.2f} - {interpretar_imc(imc)}"
         resultado.config(text=resultado_texto)
 
-        # Configurar a cor do texto com base no resultado do IMC
+        # Fonte Config
         if "Abaixo do peso" in resultado_texto or "Sobrepeso" in resultado_texto or "Obesidade" in resultado_texto:
             resultado.config(fg="red")
         else:
@@ -38,7 +38,7 @@ def interpretar_imc(imc):
     else:
         return "Obesidade Grau III"
 
-# Configuração da janela
+# Janela Config
 janela = tk.Tk()
 janela.title("Calculadora IMC")
 janela.geometry("350x400")
@@ -72,5 +72,5 @@ botao_limpar.grid(row=4, column=0, columnspan=2, pady=5)
 resultado = tk.Label(janela, text="", bg="black", fg="white")
 resultado.grid(row=5, column=0, columnspan=2, pady=5)
 
-# Iniciar a interface gráfica
+# Play
 janela.mainloop()
