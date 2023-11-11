@@ -44,7 +44,7 @@ janela.title("Calculadora IMC")
 janela.geometry("350x400")
 janela.configure(bg="black")  # Fundo preto
 
-# Configuração dos widgets
+# Config widgets
 rotulo_nome = tk.Label(janela, text="Nome:", bg="black", fg="white")
 rotulo_nome.grid(row=0, column=0, pady=5)
 
